@@ -11,8 +11,9 @@
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
 
   <!-- 自动扫描 -->
-  <context:component-scan base-package="com.ssm.demo.dao"/>
+
   <context:component-scan base-package="com.ssm.demo.service"/>
+  <context:component-scan base-package="com.ssm.demo.dao"/>
 
   <!-- 配置数据源 -->
   <bean id="dataSource"
